@@ -15,3 +15,9 @@
 
 # design修改proxy链接
 sed -i -r "s#navbar_proxy = 'openclash'#navbar_proxy = 'passwall'#g" feeds/luci/themes/luci-theme-design/luasrc/view/themes/design/header.htm
+
+#更改默认源地址为上海交大源
+sed -i "s,mirrors.vsean.net/openwrt,mirrors.sjtug.sjtu.edu.cn/immortalwrt,g" package/emortal/default-settings/files/99-default-settings-chinese
+
+rm -rf $GITHUB_WORKSPACE/openwrt/package/system/ca-certificates/Makefile
+cp -rf $GITHUB_WORKSPACE/patchs/ca-Makefile $GITHUB_WORKSPACE/openwrt/package/system/ca-certificates/Makefile
