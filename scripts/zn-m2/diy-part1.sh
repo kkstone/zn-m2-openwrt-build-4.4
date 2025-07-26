@@ -14,6 +14,7 @@
 #echo 'src-git custom https://github.com/xiaorouji/openwrt-passwall.git;packages' >>feeds.conf.default
 
 cd package
+git clone https://github.com/lwb1978/openwrt-gecoosac.git
 git clone https://github.com/xiaorouji/openwrt-passwall.git
 git clone https://github.com/xiaorouji/openwrt-passwall-packages.git && rm -rf openwrt-passwall-packages/tcping
 git clone https://github.com/xiaoxiao29/luci-app-adguardhome.git
