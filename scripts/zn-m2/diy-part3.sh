@@ -23,3 +23,6 @@ cp -rf $GITHUB_WORKSPACE/patches/ksmbd-tools-Makefile $GITHUB_WORKSPACE/openwrt/
 rm -rf $GITHUB_WORKSPACE/openwrt/package/feeds/packages/kernel/ksmbd/Makefile
 cp -rf $GITHUB_WORKSPACE/patches/ksmbd-Makefile $GITHUB_WORKSPACE/openwrt/package/feeds/packages/kernel/ksmbd/Makefile
 rm -rf $GITHUB_WORKSPACE/openwrt/package/feeds/packages/kernel/ksmbd/patches/02-fix_zdi_22_1690.patch
+
+echo 'CONFIG_NFSD_V4=y' >> $GITHUB_WORKSPACE/openwrt/target/linux/ipq60xx/config-4.4
+echo 'CONFIG_NFSD_PNFS=y' >> $GITHUB_WORKSPACE/openwrt/target/linux/ipq60xx/config-4.4
