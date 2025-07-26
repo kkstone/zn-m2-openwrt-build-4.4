@@ -13,8 +13,5 @@
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.100.1/g' package/base-files/files/bin/config_generate
 
-# design修改proxy链接
-sed -i -r "s#navbar_proxy = 'openclash'#navbar_proxy = 'passwall'#g" feeds/luci/themes/luci-theme-design/luasrc/view/themes/design/header.htm
-
 rm -rf $GITHUB_WORKSPACE/openwrt/package/system/ca-certificates/Makefile
-cp -rf $GITHUB_WORKSPACE/patchs/ca-Makefile $GITHUB_WORKSPACE/openwrt/package/system/ca-certificates/Makefile
+cp -rf $GITHUB_WORKSPACE/patches/ca-Makefile $GITHUB_WORKSPACE/openwrt/package/system/ca-certificates/Makefile
