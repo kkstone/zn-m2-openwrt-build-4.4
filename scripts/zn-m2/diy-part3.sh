@@ -19,10 +19,10 @@ rm -rf $GITHUB_WORKSPACE/openwrt/package/network/utils/iwinfo/Makefile
 wget -O $GITHUB_WORKSPACE/openwrt/package/network/utils/iwinfo/Makefile https://github.com/immortalwrt/immortalwrt/raw/refs/heads/openwrt-21.02/package/network/utils/iwinfo/Makefile
 
 rm -rf $GITHUB_WORKSPACE/openwrt/package/feeds/packages/net/ksmbd-tools/Makefile
-cp -rf $GITHUB_WORKSPACE/patches/ksmbd-tools-Makefile $GITHUB_WORKSPACE/openwrt/package/feeds/packages/net/ksmbd-tools/Makefile
+cp -rf $GITHUB_WORKSPACE/patches/ksmbd-tools-Makefile $GITHUB_WORKSPACE/openwrt/feeds/packages/net/ksmbd-tools/Makefile
 rm -rf $GITHUB_WORKSPACE/openwrt/package/feeds/packages/kernel/ksmbd/Makefile
-cp -rf $GITHUB_WORKSPACE/patches/ksmbd-Makefile $GITHUB_WORKSPACE/openwrt/package/feeds/packages/kernel/ksmbd/Makefile
-rm -rf $GITHUB_WORKSPACE/openwrt/package/feeds/packages/kernel/ksmbd/patches/02-fix_zdi_22_1690.patch
+cp -rf $GITHUB_WORKSPACE/patches/ksmbd-Makefile $GITHUB_WORKSPACE/openwrt/feeds/packages/kernel/ksmbd/Makefile
+rm -rf $GITHUB_WORKSPACE/openwrt/feeds/packages/kernel/ksmbd/patches/02-fix_zdi_22_1690.patch
 
 echo 'CONFIG_NFSD_V4=y' >> $GITHUB_WORKSPACE/openwrt/target/linux/ipq60xx/config-4.4
 echo 'CONFIG_NFSD_PNFS=y' >> $GITHUB_WORKSPACE/openwrt/target/linux/ipq60xx/config-4.4
