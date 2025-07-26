@@ -15,3 +15,5 @@
 
 rm -rf $GITHUB_WORKSPACE/openwrt/package/system/ca-certificates/Makefile
 cp -rf $GITHUB_WORKSPACE/patches/ca-Makefile $GITHUB_WORKSPACE/openwrt/package/system/ca-certificates/Makefile
+rm -rf $GITHUB_WORKSPACE/openwrt/package/network/utils/iwinfo/Makefile
+wget -O $GITHUB_WORKSPACE/openwrt/package/network/utils/iwinfo/Makefile https://github.com/immortalwrt/immortalwrt/raw/refs/heads/openwrt-21.02/package/network/utils/iwinfo/Makefile
