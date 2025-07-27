@@ -20,13 +20,11 @@ git clone https://github.com/xiaorouji/openwrt-passwall-packages.git
 git clone https://github.com/xiaoxiao29/luci-app-adguardhome.git
 git clone https://github.com/jerrykuku/lua-maxminddb.git
 git clone https://github.com/kuoruan/openwrt-frp.git -b releases/v0.63.0-1
-git clone https://github.com/mwarning/zerotier-openwrt.git && rm -rf zerotier-openwrt/zerotier/files/etc/init.d/zerotier
+git clone https://github.com/mwarning/zerotier-openwrt.git && rm -rf zerotier-openwrt/zerotier/files/etc/init.d/zerotier && rm -rf zerotier-openwrt/zerotier/files/etc/config/zerotier
 git clone https://github.com/kkstone/7zz-openwrt.git
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
 git clone -b lua https://github.com/sirpdboy/luci-app-ddns-go.git
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git
-git clone https://github.com/EkkoG/luci-app-natmap.git
-sed -i 's#../../luci.mk#$(TOPDIR)/feeds/luci/luci.mk#' luci-app-natmap/Makefile
 
 #unzip -d ./ $GITHUB_WORKSPACE/luci-packages/luci-app-frp.zip
 #unzip -d ./ $GITHUB_WORKSPACE/luci-packages/luci-app-wolplus.zip
