@@ -119,8 +119,7 @@ jobs:
     - name: Upgrade some application version
       run: |
         cd openwrt
-        rm -rf feeds/packages/net/{xray-core,v2ray-core,v2ray-geodata,sing-box,frp,smartdns,zerotier,natmap,ddns-go,tcping}
-        rm -rf feeds/luci/luci-app-frp*
+        rm -rf feeds/packages/net/{xray-core,v2ray-core,v2ray-geodata,sing-box,frp,smartdns,zerotier,natmap,ddns-go}
         rm -rf feeds/packages/utils/{zoneinfo,ttyd}
         rm -rf feeds/packages/libs/libwebsockets
         wget -r -np -nH --cut-dirs=4 -P feeds/packages/net/ https://cdn.jsdelivr.net/gh/immortalwrt/packages@master/net/tcping/ && find feeds/packages/net/tcping -type f -name "index.html*" -exec rm {} \;
