@@ -24,6 +24,7 @@ git clone https://github.com/mwarning/zerotier-openwrt.git && rm -rf zerotier-op
 git clone https://github.com/kkstone/7zz-openwrt.git
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
 git clone https://github.com/EkkoG/luci-app-natmap.git
+git clone https://github.com/sirpdboy/luci-app-ddns-go.git
 
 #unzip -d ./ $GITHUB_WORKSPACE/luci-packages/luci-app-frp.zip
 #unzip -d ./ $GITHUB_WORKSPACE/luci-packages/luci-app-wolplus.zip
