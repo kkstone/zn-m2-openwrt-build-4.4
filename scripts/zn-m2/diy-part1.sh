@@ -25,6 +25,7 @@ git clone https://github.com/mwarning/zerotier-openwrt.git && rm -rf zerotier-op
 git clone https://github.com/kkstone/7zz-openwrt.git
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
 git clone -b lua https://github.com/sirpdboy/luci-app-ddns-go.git && rm -rf luci-app-ddns-go/ddns-go/Makefile && wget -O luci-app-ddns-go/ddns-go/Makefile https://github.com/immortalwrt/packages/raw/refs/heads/master/net/ddns-go/Makefile
+sed -i 's#../../lang/golang/golang-package.mk#$(TOPDIR)/feeds/packages/lang/golang/golang-package.mk#' luci-app-ddns-go/ddns-go/Makefile
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git
 
 #unzip -d ./ $GITHUB_WORKSPACE/luci-packages/luci-app-frp.zip
