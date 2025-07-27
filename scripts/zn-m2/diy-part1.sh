@@ -13,6 +13,7 @@
 # Uncomment a feed source
 #echo 'src-git custom https://github.com/xiaorouji/openwrt-passwall.git;packages' >>feeds.conf.default
 
+chmod 755 target/linux/oxnas/base-files/etc/init.d/set-irq-affinity
 cd package
 git clone https://github.com/lwb1978/openwrt-gecoosac.git
 git clone https://github.com/xiaorouji/openwrt-passwall.git
