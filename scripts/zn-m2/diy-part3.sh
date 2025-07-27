@@ -22,7 +22,6 @@ rm -rf $GITHUB_WORKSPACE/openwrt/feeds/packages/net/ksmbd-tools/Makefile
 cp -rf $GITHUB_WORKSPACE/patches/ksmbd-tools-Makefile $GITHUB_WORKSPACE/openwrt/feeds/packages/net/ksmbd-tools/Makefile
 rm -rf $GITHUB_WORKSPACE/openwrt/feeds/packages/kernel/ksmbd/Makefile
 cp -rf $GITHUB_WORKSPACE/patches/ksmbd-Makefile $GITHUB_WORKSPACE/openwrt/feeds/packages/kernel/ksmbd/Makefile
-rm -rf $GITHUB_WORKSPACE/openwrt/feeds/packages/kernel/ksmbd/patches/02-fix_zdi_22_1690.patch
 
 #mkdir $GITHUB_WORKSPACE/openwrt/tmp_tmp
 #cd $GITHUB_WORKSPACE/openwrt/tmp_tmp
