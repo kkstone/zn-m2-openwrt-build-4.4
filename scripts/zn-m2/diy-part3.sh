@@ -28,7 +28,6 @@ cp -rf $GITHUB_WORKSPACE/patches/luci-openwrt-21.02.zip $GITHUB_WORKSPACE/openwr
 rm -rf $GITHUB_WORKSPACE/openwrt/feeds/luci/applications
 unzip $GITHUB_WORKSPACE/openwrt/feeds/luci-openwrt-21.02.zip && rm -rf $GITHUB_WORKSPACE/openwrt/feeds/luci-openwrt-21.02.zip
 rm -rf $GITHUB_WORKSPACE/openwrt/feeds/luci/themes/{luci-theme-B*,luci-theme-a*,luci-theme-bootstrap-mod,luci-theme-d*,luci-theme-i*,luci-theme-m*,luci-theme-n*,luci-theme-o*,luci-theme-r*}
-rm -rf $GITHUB_WORKSPACE/openwrt/feeds/luci/applications/luci-app-firewall
 cp -rf $GITHUB_WORKSPACE/patches/luci-app-firewall.zip $GITHUB_WORKSPACE/openwrt/feeds/luci-app-firewall.zip
 unzip $GITHUB_WORKSPACE/openwrt/feeds/luci-app-firewall.zip && rm -rf $GITHUB_WORKSPACE/openwrt/feeds/luci-app-firewall.zip
 
