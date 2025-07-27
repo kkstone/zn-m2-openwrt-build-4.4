@@ -29,3 +29,5 @@ git clone -b lede https://github.com/pymumu/luci-app-smartdns.git
 
 #unzip -d ./ $GITHUB_WORKSPACE/luci-packages/luci-app-frp.zip
 #unzip -d ./ $GITHUB_WORKSPACE/luci-packages/luci-app-wolplus.zip
+
+sed -i 's/flyHello/OpenWrt/g' $GITHUB_WORKSPACE/openwrt/package/extra/default-settings/files/99-default-settings
