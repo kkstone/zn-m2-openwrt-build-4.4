@@ -25,5 +25,5 @@ git clone https://github.com/kkstone/7zz-openwrt.git
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
 git clone https://github.com/EkkoG/luci-app-natmap.git
 
-unzip -d ./ $GITHUB_WORKSPACE/luci-packages/luci-app-frp.zip
-unzip -d ./ $GITHUB_WORKSPACE/luci-packages/luci-app-wolplus.zip
+#unzip -d ./ $GITHUB_WORKSPACE/luci-packages/luci-app-frp.zip
+#unzip -d ./ $GITHUB_WORKSPACE/luci-packages/luci-app-wolplus.zip
