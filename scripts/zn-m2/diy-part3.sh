@@ -24,12 +24,17 @@ rm -rf $GITHUB_WORKSPACE/openwrt/feeds/packages/kernel/ksmbd/Makefile
 cp -rf $GITHUB_WORKSPACE/patches/ksmbd-Makefile $GITHUB_WORKSPACE/openwrt/feeds/packages/kernel/ksmbd/Makefile
 rm -rf $GITHUB_WORKSPACE/openwrt/feeds/packages/kernel/ksmbd/patches/02-fix_zdi_22_1690.patch
 
-cp -rf $GITHUB_WORKSPACE/patches/luci-openwrt-21.02.zip $GITHUB_WORKSPACE/openwrt/feeds/luci-openwrt-21.02.zip
-rm -rf $GITHUB_WORKSPACE/openwrt/feeds/luci/applications
-unzip $GITHUB_WORKSPACE/openwrt/feeds/luci-openwrt-21.02.zip && rm -rf $GITHUB_WORKSPACE/openwrt/feeds/luci-openwrt-21.02.zip
-rm -rf $GITHUB_WORKSPACE/openwrt/feeds/luci/themes/{luci-theme-B*,luci-theme-a*,luci-theme-bootstrap-mod,luci-theme-d*,luci-theme-i*,luci-theme-m*,luci-theme-n*,luci-theme-o*,luci-theme-r*}
-cp -rf $GITHUB_WORKSPACE/patches/luci-app-firewall.zip $GITHUB_WORKSPACE/openwrt/feeds/luci-app-firewall.zip
-unzip $GITHUB_WORKSPACE/openwrt/feeds/luci-app-firewall.zip && rm -rf $GITHUB_WORKSPACE/openwrt/feeds/luci-app-firewall.zip
+mkdir $GITHUB_WORKSPACE/openwrt/tmp_tmp
+cd $GITHUB_WORKSPACE/openwrt/tmp_tmp
+wget https://github.com/immortalwrt/luci/archive/refs/heads/openwrt-21.02.zip
+unzip openwrt-21.02.zip
+rm -rf $GITHUB_WORKSPACE/openwrt/feeds/luci/applications/*
+rm -rf luci-openwrt-21.02/applications/luci-app-firewall
+mv luci-openwrt-21.02/applications/* $GITHUB_WORKSPACE/openwrt/feeds/luci/applications/*
+wget https://github.com/openwrt-fork/sdf8057-luci/archive/refs/heads/2023.zip
+unzip 2023.zip
+mv sdf8057-luci-2023/applications/luci-app-firewall $GITHUB_WORKSPACE/openwrt/feeds/luci/applications/luci-app-firewall
+cd ~ && rm -rf $GITHUB_WORKSPACE/openwrt/tmp_tmp
 
 echo 'CONFIG_NFSD_V4=y' >> $GITHUB_WORKSPACE/openwrt/target/linux/ipq60xx/config-4.4
 echo 'CONFIG_NFSD_PNFS=y' >> $GITHUB_WORKSPACE/openwrt/target/linux/ipq60xx/config-4.4
