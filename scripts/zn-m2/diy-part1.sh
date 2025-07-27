@@ -23,7 +23,7 @@ git clone https://github.com/kuoruan/openwrt-frp.git -b releases/v0.63.0-1
 git clone https://github.com/mwarning/zerotier-openwrt.git && rm -rf zerotier-openwrt/zerotier/files/etc/init.d/zerotier && rm -rf zerotier-openwrt/zerotier/files/etc/config/zerotier
 git clone https://github.com/kkstone/7zz-openwrt.git
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
-git clone -b lua https://github.com/sirpdboy/luci-app-ddns-go.git
+git clone -b lua https://github.com/sirpdboy/luci-app-ddns-go.git && rm -rf luci-app-ddns-go/ddns-go/Makefile && wget -O luci-app-ddns-go/ddns-go/Makefile https://github.com/immortalwrt/packages/raw/refs/heads/master/net/ddns-go/Makefile
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git
 
 #unzip -d ./ $GITHUB_WORKSPACE/luci-packages/luci-app-frp.zip
