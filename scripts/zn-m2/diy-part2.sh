@@ -9,3 +9,5 @@
 # File name: diy-part2.sh
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
+
+git clone https://github.com/EkkoG/luci-app-natmap.git $GITHUB_WORKSPACE/openwrt/feeds/luci/applications/
