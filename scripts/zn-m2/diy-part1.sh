@@ -21,8 +21,11 @@ git clone https://github.com/xiaorouji/openwrt-passwall-packages.git
 git clone https://github.com/xiaoxiao29/luci-app-adguardhome.git
 git clone https://github.com/jerrykuku/lua-maxminddb.git
 git clone https://github.com/kuoruan/openwrt-frp.git -b releases/v0.63.0-1
-git clone https://github.com/mwarning/zerotier-openwrt.git && rm -rf zerotier-openwrt/zerotier/files/etc/init.d/zerotier && rm -rf zerotier-openwrt/zerotier/files/etc/config/zerotier
-wget -O zerotier-openwrt/zerotier/files/etc/config/zerotier https://gist.github.com/kkstone/afea88e38ee02f3334f02b58c26fcd5d/raw/97bd6ad87fd42c55c55dd0f58273b0c40e506c15/zerotier-config
+git clone -b 1.14.2 https://github.com/mwarning/zerotier-openwrt.git
+rm -rf zerotier-openwrt/zerotier/files/etc/init.d/zerotier
+rm -rf zerotier-openwrt/zerotier/files/etc/config/zerotier
+rm -rf zerotier-openwrt/zerotier/files/etc/uci-defaults
+wget -O zerotier-openwrt/zerotier/files/etc/config/zerotier https://github.com/openwrt-fork/sdf8057-packages/raw/refs/heads/2023/net/zerotier/files/etc/config/zerotier
 git clone https://github.com/kkstone/7zz-openwrt.git
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
 git clone -b lua https://github.com/sirpdboy/luci-app-ddns-go.git
