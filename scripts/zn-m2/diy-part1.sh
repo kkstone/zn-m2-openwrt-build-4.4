@@ -26,6 +26,7 @@ rm -rf zerotier-openwrt/zerotier/files/etc/init.d/zerotier
 rm -rf zerotier-openwrt/zerotier/files/etc/config/zerotier
 rm -rf zerotier-openwrt/zerotier/files/etc/uci-defaults
 wget -O zerotier-openwrt/zerotier/files/etc/config/zerotier https://github.com/openwrt-fork/sdf8057-packages/raw/refs/heads/2023/net/zerotier/files/etc/config/zerotier
+sed -i '/INSTALL_DIR.*uci-defaults/d' zerotier-openwrt/zerotier/Makefile
 git clone https://github.com/kkstone/7zz-openwrt.git
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
 git clone -b lua https://github.com/sirpdboy/luci-app-ddns-go.git
