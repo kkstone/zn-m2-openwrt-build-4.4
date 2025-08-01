@@ -29,6 +29,7 @@ wget -O zerotier-openwrt/zerotier/files/etc/config/zerotier https://github.com/o
 sed -i '/INSTALL_DIR.*uci-defaults/d' zerotier-openwrt/zerotier/Makefile
 git clone https://github.com/kkstone/7zz-openwrt.git
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
+git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git
 git clone -b lua https://github.com/sirpdboy/luci-app-ddns-go.git
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git
 
