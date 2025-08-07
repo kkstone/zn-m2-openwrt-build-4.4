@@ -93,7 +93,7 @@ jobs:
       with:
         ccache: 'true'
         mixkey: 'znm2-4460'
-        prefix: ${{ github.workspace }}/openwrt
+        prefix: '/home/runner/work/zn-m2-openwrt-build-4.4/zn-m2-openwrt-build-4.4/openwrt'
 
     - name: Load custom feeds
       run: |
