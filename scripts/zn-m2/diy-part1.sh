@@ -18,8 +18,6 @@ cd package
 git clone https://github.com/lwb1978/openwrt-gecoosac.git
 git clone https://github.com/xiaorouji/openwrt-passwall.git
 git clone https://github.com/xiaorouji/openwrt-passwall-packages.git
-rm -rf openwrt-passwall-packages/microsocks
-git clone https://github.com/rofl0r/microsocks.git  openwrt-passwall-packages/microsocks
 git clone https://github.com/xiaoxiao29/luci-app-adguardhome.git
 git clone https://github.com/jerrykuku/lua-maxminddb.git
 git clone https://github.com/kuoruan/openwrt-frp.git -b releases/v0.65.0-1
