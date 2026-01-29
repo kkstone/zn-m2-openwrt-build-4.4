@@ -16,11 +16,11 @@
 chmod 755 target/linux/ipq60xx/base-files/etc/init.d/set-irq-affinity
 cd package
 git clone https://github.com/lwb1978/openwrt-gecoosac.git
-git clone https://github.com/xiaorouji/openwrt-passwall.git
-git clone https://github.com/xiaorouji/openwrt-passwall-packages.git
+git clone https://github.com/Openwrt-Passwall/openwrt-passwall.git
+git clone https://github.com/Openwrt-Passwall/openwrt-passwall-packages.git
 git clone https://github.com/xiaoxiao29/luci-app-adguardhome.git
 git clone https://github.com/jerrykuku/lua-maxminddb.git
-git clone https://github.com/kuoruan/openwrt-frp.git -b releases/v0.65.0-1
+git clone https://github.com/kuoruan/openwrt-frp.git -b releases/v0.66.0-1
 git clone https://github.com/mwarning/zerotier-openwrt.git
 rm -rf zerotier-openwrt/zerotier/files/etc/init.d/zerotier
 rm -rf zerotier-openwrt/zerotier/files/etc/config/zerotier
