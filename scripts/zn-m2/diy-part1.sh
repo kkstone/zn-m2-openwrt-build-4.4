@@ -15,7 +15,7 @@
 
 chmod 755 target/linux/ipq60xx/base-files/etc/init.d/set-irq-affinity
 cd package
-git clone https://github.com/lwb1978/openwrt-gecoosac.git
+git clone https://github.com/lyin888/openwrt-gecoosac.git
 git clone https://github.com/Openwrt-Passwall/openwrt-passwall.git
 git clone https://github.com/Openwrt-Passwall/openwrt-passwall-packages.git
 git clone https://github.com/xiaoxiao29/luci-app-adguardhome.git
